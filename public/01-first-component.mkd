@@ -1,0 +1,24 @@
+### What I learned creating my first React Component
+```javascript
+var CommentBox = React.createClass({
+    render: function() {
+        return (
+            <div className="commentBox">
+                Hello, world! I am a CommentBox.
+            </div>
+        );
+    }
+});
+
+ReactDOM.render(
+    <CommentBox />,
+    document.getElementById( 'content' )
+);
+```
+
+- React components are created using the `React.createClass` method.
+- Native HTML element names start with a lowercase letter, while custom React class names begin with an uppercase letter.
+- The XML style syntax is actually JSX and babel precompiles JSX to plain Javascript.
+- The `render()` method returns a tree of React components that will eventually get rendered to HTML.
+- The `div` tags are not actualy DOM but instantiations of React `div` components.
+- ReactDOM module exposes DOM specific methods, while `React` is composed of core tools that work across different platforms.
