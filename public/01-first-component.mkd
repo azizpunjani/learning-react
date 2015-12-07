@@ -16,7 +16,9 @@ ReactDOM.render(
 );
 ```
 
-- React components are created using the `React.createClass` method.
+- React components are created using the `React.createClass` method. React components can also be defined using ES6
+class syntax i.e `class CommentBox extends React.Component`
+
 - Native HTML element names start with a lowercase letter, while custom React class names begin with an uppercase letter.
 - The XML style syntax is actually JSX and babel precompiles JSX to plain Javascript.
 - The `render()` method returns a tree of React components that will eventually get rendered to HTML.

@@ -118,9 +118,7 @@
                 },
 
                 getComments() {
-                    var request = $.getJSON(
-                        this.props.url.toString()
-                    );
+                    var request = $.getJSON( this.props.url.toString() );
 
                     request.done( ( data ) => {
                         this.setState({
